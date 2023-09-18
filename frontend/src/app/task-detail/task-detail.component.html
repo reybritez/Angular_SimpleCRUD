@@ -1,0 +1,12 @@
+<div *ngIf="task">
+    <h2>{{ task.title | uppercase }} Details</h2>
+    <hr/>
+    <div>
+      <p>Id: {{ task.task_id }}</p>
+      <p>Title: {{ task.title }}</p>
+      <p>Content: {{ task.content }}</p>
+    </div>
+    <hr/>
+    <button class="go-back" (click)="goBack()">go back</button>
+  </div>
+  

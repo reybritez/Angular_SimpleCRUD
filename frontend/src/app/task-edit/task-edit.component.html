@@ -1,0 +1,13 @@
+<div *ngIf="task">
+    <h2>{{ task.title | uppercase }} Details</h2>
+    <hr/>
+    <div>
+      <p>Title: <input [(ngModel)]="task.title" placeholder="Task Title" /></p>
+      <p>Content: <input [(ngModel)]="task.content" placeholder="Task Details" /></p>
+    </div>
+    <hr/>
+    <button class="go-back" (click)="goBack()">go back</button>
+    &nbsp;
+    <button class="save" (click)="save()">save</button>
+  </div>
+  

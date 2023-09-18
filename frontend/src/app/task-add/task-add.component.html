@@ -1,0 +1,20 @@
+<div>
+    <h2>Add Task Detail</h2>
+    <hr/>
+    <div>
+      <p>
+          <label>Title:
+              <input [(ngModel)]="task.title" placeholder="Task Title"/>
+          </label>
+      </p>
+      <p>
+          <label>Content:
+              <input [(ngModel)]="task.content" placeholder="Task Content"/>
+          </label>
+      </p>
+    </div>
+    <hr/>
+    <button class="go-back" (click)="goBack()">go back</button>
+     &nbsp;
+    <button class="save" (click)="save()">save</button>
+  </div>
