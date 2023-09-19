@@ -8,19 +8,20 @@
       <th style="text-align: center">ID</th>
       <th style="text-align: center">Title</th>
       <th style="text-align: center">Content</th>
+      <th style="text-align: center">Actions</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody style="text-align: center">
     <tr *ngFor="let task of tasks">
       <td>{{ task.task_id }}</td>
       <td>{{ task.title }}</td>
       <td>{{ task.content }}</td>
       <td>
-        <a routerLink="/detail/{{ task.task_id }}">Detail</a> 
+        <a class="btn btn-primary" routerLink="/detail/{{ task.task_id }}">Detail</a> 
         &nbsp;
-        <a routerLink="/edit/{{ task.task_id }}">Edit</a>
+        <a class="btn btn-secondary"  routerLink="/edit/{{ task.task_id }}">Edit</a>
         &nbsp;
-        <button title="delete task" (click)="delete(task)">Delete</button>
+        <button class="btn btn-danger"  title="delete task" (click)="delete(task)">Delete</button>
       </td>
     </tr>
   </tbody>
@@ -28,6 +29,6 @@
 
 <br/>
 <div>
-  <a routerLink="/add"> Add New Task </a>
+  <a class="btn btn-primary ml-3" routerLink="/add"> Add New Task </a>
 </div>
 

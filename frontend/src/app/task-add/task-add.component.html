@@ -1,20 +1,20 @@
 <div>
-    <h2>Add Task Detail</h2>
+    <h2 class="text-center pt-2">Add Task Detail</h2>
     <hr/>
-    <div>
+    <div class="ml-2">
       <p>
-          <label>Title:
-              <input [(ngModel)]="task.title" placeholder="Task Title"/>
+          <label >Title:
+              <input class="ml-5" [(ngModel)]="task.title" placeholder="Task Title"/>
           </label>
       </p>
       <p>
           <label>Content:
-              <input [(ngModel)]="task.content" placeholder="Task Content"/>
+              <input class="ml-4" [(ngModel)]="task.content" placeholder="Task Content"/>
           </label>
       </p>
     </div>
     <hr/>
-    <button class="go-back" (click)="goBack()">go back</button>
+    <button class="go-back ml-2 btn btn-secondary ml-3" (click)="goBack()">go back</button>
      &nbsp;
-    <button class="save" (click)="save()">save</button>
+    <button class="save ml-2 btn btn-primary ml-3" (click)="save()">save</button>
   </div>
