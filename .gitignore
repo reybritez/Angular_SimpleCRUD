@@ -9,6 +9,7 @@
 node_modules/
 venv/
 __pycache__/
+.angular/
 
 # CircleCI temporary file for cache key computation.
 # See `save_month_to_file` in `.circleci/config.yml`.
